@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: infoready_development
   pool: 5
-  username: infoready
+  username: mrrussellong
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -49,7 +49,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: infoready_production
+  database: infoready_development
   pool: 5
-  username: infoready
+  username: mrrussellong
   password:
