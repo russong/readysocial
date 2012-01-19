@@ -17,7 +17,11 @@ end
 
 gem 'activeadmin'
 gem 'sass-rails'
+gem 'haml'
+gem 'haml-rails'
 gem 'meta_search',    '>= 1.1.0.pre'
+gem 'twitter-bootstrap-rails'
+
 
 
 gem 'jquery-rails'
