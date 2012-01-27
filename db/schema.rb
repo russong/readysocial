@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120117133233) do
+ActiveRecord::Schema.define(:version => 20120125054123) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -48,6 +48,22 @@ ActiveRecord::Schema.define(:version => 20120117133233) do
 
   create_table "keywords", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "raw_data", :force => true do |t|
+    t.integer  "keyword_id"
+    t.text     "blurb"
+    t.text     "properties"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "raw_data", ["keyword_id"], :name => "index_raw_data_on_keyword_id"
+
+  create_table "tests", :force => true do |t|
+    t.integer  "user_id",    :limit => 8
     t.datetime "created_at"
     t.datetime "updated_at"
   end

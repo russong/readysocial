@@ -16,6 +16,8 @@ class HomeController < ApplicationController
         json = JSON.parse(res.body)
         json["results"].each do |result|
           val << result["text"]
+          # val = val.join if val.class == Array
+          RawDatum.where(blurb: result["text"]).first_or_create(keyword_id: key.id)
         end
         @hash = @hash.merge!(key.name.to_sym => val)
       end
