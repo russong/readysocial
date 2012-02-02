@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: infoready_development
+  database: infoready
   pool: 5
-  username: mrrussellong
+  username: bchan
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  blurb: MyText
+  rss_feed_keyword_id: 1
+
+two:
+  blurb: MyText
+  rss_feed_keyword_id: 1

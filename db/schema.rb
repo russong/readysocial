@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120125054123) do
+ActiveRecord::Schema.define(:version => 20120130055730) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(:version => 20120125054123) do
     t.integer  "author_id"
     t.string   "author_type"
     t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
     t.string   "namespace"
   end
 
@@ -39,8 +39,8 @@ ActiveRecord::Schema.define(:version => 20120125054123) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                            :null => false
+    t.datetime "updated_at",                                            :null => false
   end
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
@@ -48,8 +48,8 @@ ActiveRecord::Schema.define(:version => 20120125054123) do
 
   create_table "keywords", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "raw_data", :force => true do |t|
@@ -62,10 +62,37 @@ ActiveRecord::Schema.define(:version => 20120125054123) do
 
   add_index "raw_data", ["keyword_id"], :name => "index_raw_data_on_keyword_id"
 
+  create_table "rss_feed_data", :force => true do |t|
+    t.text     "blurb"
+    t.string   "name"
+    t.string   "url"
+    t.string   "guid"
+    t.datetime "published_at"
+    t.integer  "rss_feed_keyword_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  add_index "rss_feed_data", ["rss_feed_keyword_id"], :name => "index_rss_feed_data_on_rss_feed_keyword_id"
+
+  create_table "rss_feed_keywords", :force => true do |t|
+    t.integer  "rss_feed_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "rss_feed_keywords", ["rss_feed_id"], :name => "index_rss_feed_keywords_on_rss_feed_id"
+
+  create_table "rss_feeds", :force => true do |t|
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "tests", :force => true do |t|
     t.integer  "user_id",    :limit => 8
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
   end
 
 end

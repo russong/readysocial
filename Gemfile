@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.0.rc2'
+gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -17,27 +17,10 @@ group :assets do
 end
 
 gem 'activeadmin', git: "git://github.com/gregbell/active_admin.git"
-
+gem "feedzirra", git: "git://github.com/pauldix/feedzirra.git" #, :lib => "feedzirra", :source => "http://gems.github.com"
 gem 'haml'
 gem 'haml-rails'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'twitter-bootstrap-rails'
 
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
-group :test do
-  # Pretty printed test output
-  gem 'turn', '0.8.2', :require => false
-end

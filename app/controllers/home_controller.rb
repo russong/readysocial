@@ -25,3 +25,5 @@ class HomeController < ApplicationController
   end
 
 end
+
+# "(\w+[and]?)" search for ""

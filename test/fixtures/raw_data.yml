@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  keyword_id: 1
+  blurb: MyText
+  properties: MyText
+
+two:
+  keyword_id: 1
+  blurb: MyText
+  properties: MyText

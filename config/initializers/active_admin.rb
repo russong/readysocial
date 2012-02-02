@@ -4,11 +4,11 @@ if ActiveAdmin::VERSION == "0.3.4" && Rails.version == "3.2.0"
       @files
     end
   end
-else
-  warn = "!! double check the ActiveSupport::FileUpdateChecker duck punch in #{__FILE__} !!"
-  puts "!" * warn.size
-  puts warn
-  puts "!" * warn.size
+# else
+#   warn = "!! double check the ActiveSupport::FileUpdateChecker duck punch in #{__FILE__} !!"
+#   puts "!" * warn.size
+#   puts warn
+#   puts "!" * warn.size
 end
 
 

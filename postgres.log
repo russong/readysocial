@@ -1,0 +1,823 @@
+LOG:  database system was shut down at 2012-01-25 14:07:31 PHT
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-01-25 18:47:42 PHT
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+WARNING:  pgstat wait timeout
+ERROR:  missing FROM-clause entry for table "keywords" at character 48
+STATEMENT:  SELECT  "raw_data".* FROM "raw_data"  ORDER BY keywords.name desc LIMIT 30 OFFSET 0
+ERROR:  missing FROM-clause entry for table "keywords" at character 48
+STATEMENT:  SELECT  "raw_data".* FROM "raw_data"  ORDER BY keywords.name desc LIMIT 30 OFFSET 0
+LOG:  unexpected EOF on client connection
+LOG:  unexpected EOF on client connection
+ERROR:  missing FROM-clause entry for table "keywords" at character 48
+STATEMENT:  SELECT  "raw_data".* FROM "raw_data"  ORDER BY keywords.name desc LIMIT 30 OFFSET 0
+FATAL:  role "richardgonzales" does not exist
+FATAL:  database "bchan" does not exist
+ERROR:  database "tftlive" already exists
+STATEMENT:  create database tftlive;
+LOG:  unexpected EOF on client connection
+LOG:  unexpected EOF on client connection
+LOG:  database system was interrupted; last known up at 2012-01-27 17:29:44 PHT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  consistent recovery state reached at 0/1D9DB50
+LOG:  record with zero length at 0/1D9DB50
+LOG:  redo is not required
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  syntax error at or near "rss_fk" at character 47
+STATEMENT:  alter table rss_feed_keywords add foreign key rss_fk(rss_feed_id) references rss_feeds(id);
+FATAL:  role "infoready" does not exist
+FATAL:  database "infoready" does not exist
+FATAL:  role "infoready" does not exist
+FATAL:  role "infoready" does not exist
+LOG:  database system was interrupted; last known up at 2012-01-30 17:30:40 PHT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  consistent recovery state reached at 0/1DFB488
+LOG:  record with zero length at 0/1DFB488
+LOG:  redo is not required
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "bchan" does not exist
+ERROR:  index "unique_schema_migrations" does not exist
+STATEMENT:  
+	DROP INDEX public.unique_schema_migrations;
+ERROR:  index "taggable_context" does not exist
+STATEMENT:  DROP INDEX public.taggable_context;
+ERROR:  index "subscribed" does not exist
+STATEMENT:  DROP INDEX public.subscribed;
+ERROR:  index "provider_transaction" does not exist
+STATEMENT:  DROP INDEX public.provider_transaction;
+ERROR:  index "ordered_by_listing" does not exist
+STATEMENT:  DROP INDEX public.ordered_by_listing;
+ERROR:  index "index_users_on_username" does not exist
+STATEMENT:  DROP INDEX public.index_users_on_username;
+ERROR:  index "index_users_on_account_id" does not exist
+STATEMENT:  DROP INDEX public.index_users_on_account_id;
+ERROR:  index "index_taggings_on_taggable_id_and_taggable_type" does not exist
+STATEMENT:  DROP INDEX public.index_taggings_on_taggable_id_and_taggable_type;
+ERROR:  index "index_taggings_on_tag_id" does not exist
+STATEMENT:  DROP INDEX public.index_taggings_on_tag_id;
+ERROR:  index "index_section_translations_on_section_id" does not exist
+STATEMENT:  DROP INDEX public.index_section_translations_on_section_id;
+ERROR:  index "index_ratings_on_rater_id" does not exist
+STATEMENT:  DROP INDEX public.index_ratings_on_rater_id;
+ERROR:  index "index_ratings_on_rated_type_and_rated_id" does not exist
+STATEMENT:  DROP INDEX public.index_ratings_on_rated_type_and_rated_id;
+ERROR:  index "index_rating_statistics_on_rated_type_and_rated_id" does not exist
+STATEMENT:  DROP INDEX public.index_rating_statistics_on_rated_type_and_rated_id;
+ERROR:  index "index_payment_transactions_on_payment_subscriber_id" does not exist
+STATEMENT:  DROP INDEX public.index_payment_transactions_on_payment_subscriber_id;
+ERROR:  index "index_category_translations_on_category_id" does not exist
+STATEMENT:  DROP INDEX public.index_category_translations_on_category_id;
+ERROR:  index "index_calendar_events_on_permalink" does not exist
+STATEMENT:  DROP INDEX public.index_calendar_events_on_permalink;
+ERROR:  index "index_calendar_events_on_listing_id" does not exist
+STATEMENT:  DROP INDEX public.index_calendar_events_on_listing_id;
+ERROR:  relation "public.vouchers" does not exist
+STATEMENT:  ALTER TABLE ONLY public.vouchers DROP CONSTRAINT vouchers_pkey;
+ERROR:  relation "public.views" does not exist
+STATEMENT:  ALTER TABLE ONLY public.views DROP CONSTRAINT views_pkey;
+ERROR:  relation "public.users" does not exist
+STATEMENT:  ALTER TABLE ONLY public.users DROP CONSTRAINT users_pkey;
+ERROR:  relation "public.topics" does not exist
+STATEMENT:  ALTER TABLE ONLY public.topics DROP CONSTRAINT topics_pkey;
+ERROR:  relation "public.tender_messages" does not exist
+STATEMENT:  ALTER TABLE ONLY public.tender_messages DROP CONSTRAINT tender_messages_pkey;
+ERROR:  relation "public.tags" does not exist
+STATEMENT:  ALTER TABLE ONLY public.tags DROP CONSTRAINT tags_pkey;
+ERROR:  relation "public.taggings" does not exist
+STATEMENT:  ALTER TABLE ONLY public.taggings DROP CONSTRAINT taggings_pkey;
+ERROR:  relation "public.snippets" does not exist
+STATEMENT:  ALTER TABLE ONLY public.snippets DROP CONSTRAINT snippets_pkey;
+ERROR:  relation "public.sites" does not exist
+STATEMENT:  ALTER TABLE ONLY public.sites DROP CONSTRAINT sites_pkey;
+ERROR:  relation "public.sections" does not exist
+STATEMENT:  ALTER TABLE ONLY public.sections DROP CONSTRAINT sections_pkey;
+ERROR:  relation "public.section_translations" does not exist
+STATEMENT:  ALTER TABLE ONLY public.section_translations DROP CONSTRAINT section_translations_pkey;
+ERROR:  relation "public.roles" does not exist
+STATEMENT:  ALTER TABLE ONLY public.roles DROP CONSTRAINT roles_pkey;
+ERROR:  relation "public.ratings" does not exist
+STATEMENT:  ALTER TABLE ONLY public.ratings DROP CONSTRAINT ratings_pkey;
+ERROR:  relation "public.rating_statistics" does not exist
+STATEMENT:  ALTER TABLE ONLY public.rating_statistics DROP CONSTRAINT rating_statistics_pkey;
+ERROR:  relation "public.product_tenders" does not exist
+STATEMENT:  ALTER TABLE ONLY public.product_tenders DROP CONSTRAINT product_tenders_pkey;
+ERROR:  relation "public.plugin_configs" does not exist
+STATEMENT:  ALTER TABLE ONLY public.plugin_configs DROP CONSTRAINT plugin_configs_pkey;
+ERROR:  relation "public.payment_transactions" does not exist
+STATEMENT:  ALTER TABLE ONLY public.payment_transactions DROP CONSTRAINT payment_transactions_pkey;
+ERROR:  relation "public.payment_subscribers" does not exist
+STATEMENT:  ALTER TABLE ONLY public.payment_subscribers DROP CONSTRAINT payment_subscribers_pkey;
+ERROR:  relation "public.memberships" does not exist
+STATEMENT:  ALTER TABLE ONLY public.memberships DROP CONSTRAINT memberships_pkey;
+ERROR:  relation "public.listings" does not exist
+STATEMENT:  ALTER TABLE ONLY public.listings DROP CONSTRAINT listings_pkey;
+ERROR:  relation "public.listing_contents" does not exist
+STATEMENT:  ALTER TABLE ONLY public.listing_contents DROP CONSTRAINT listing_contents_pkey;
+ERROR:  relation "public.listing_categories" does not exist
+STATEMENT:  ALTER TABLE ONLY public.listing_categories DROP CONSTRAINT listing_categories_pkey;
+ERROR:  relation "public.listing_attachments" does not exist
+STATEMENT:  ALTER TABLE ONLY public.listing_attachments DROP CONSTRAINT listing_attachments_pkey;
+ERROR:  relation "public.feedbacks" does not exist
+STATEMENT:  ALTER TABLE ONLY public.feedbacks DROP CONSTRAINT feedbacks_pkey;
+ERROR:  relation "public.counters" does not exist
+STATEMENT:  ALTER TABLE ONLY public.counters DROP CONSTRAINT counters_pkey;
+ERROR:  relation "public.controlled_tags" does not exist
+STATEMENT:  ALTER TABLE ONLY public.controlled_tags DROP CONSTRAINT controlled_tags_pkey;
+ERROR:  relation "public.contents" does not exist
+STATEMENT:  ALTER TABLE ONLY public.contents DROP CONSTRAINT contents_pkey;
+ERROR:  relation "public.content_translations" does not exist
+STATEMENT:  ALTER TABLE ONLY public.content_translations DROP CONSTRAINT content_translations_pkey;
+ERROR:  relation "public.content_links" does not exist
+STATEMENT:  ALTER TABLE ONLY public.content_links DROP CONSTRAINT content_links_pkey;
+ERROR:  relation "public.comments" does not exist
+STATEMENT:  ALTER TABLE ONLY public.comments DROP CONSTRAINT comments_pkey;
+ERROR:  relation "public.claim_requests" does not exist
+STATEMENT:  ALTER TABLE ONLY public.claim_requests DROP CONSTRAINT claim_requests_pkey;
+ERROR:  relation "public.category_translations" does not exist
+STATEMENT:  ALTER TABLE ONLY public.category_translations DROP CONSTRAINT category_translations_pkey;
+ERROR:  relation "public.categorizations" does not exist
+STATEMENT:  ALTER TABLE ONLY public.categorizations DROP CONSTRAINT category_assignments_pkey;
+ERROR:  relation "public.categories" does not exist
+STATEMENT:  ALTER TABLE ONLY public.categories DROP CONSTRAINT categories_pkey;
+ERROR:  relation "public.calendar_events" does not exist
+STATEMENT:  ALTER TABLE ONLY public.calendar_events DROP CONSTRAINT calendar_events_pkey;
+ERROR:  relation "public.cached_pages" does not exist
+STATEMENT:  ALTER TABLE ONLY public.cached_pages DROP CONSTRAINT cached_pages_pkey;
+ERROR:  relation "public.cached_page_references" does not exist
+STATEMENT:  ALTER TABLE ONLY public.cached_page_references DROP CONSTRAINT cached_page_references_pkey;
+ERROR:  relation "public.boards" does not exist
+STATEMENT:  ALTER TABLE ONLY public.boards DROP CONSTRAINT boards_pkey;
+ERROR:  relation "public.assets" does not exist
+STATEMENT:  ALTER TABLE ONLY public.assets DROP CONSTRAINT assets_pkey;
+ERROR:  relation "public.asset_assignments" does not exist
+STATEMENT:  ALTER TABLE ONLY public.asset_assignments DROP CONSTRAINT asset_assignments_pkey;
+ERROR:  relation "public.activities" does not exist
+STATEMENT:  ALTER TABLE ONLY public.activities DROP CONSTRAINT activities_pkey;
+ERROR:  relation "public.accounts" does not exist
+STATEMENT:  ALTER TABLE ONLY public.accounts DROP CONSTRAINT accounts_pkey;
+ERROR:  relation "public.vouchers" does not exist
+STATEMENT:  ALTER TABLE public.vouchers ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.views" does not exist
+STATEMENT:  ALTER TABLE public.views ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.users" does not exist
+STATEMENT:  ALTER TABLE public.users ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.topics" does not exist
+STATEMENT:  ALTER TABLE public.topics ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.tender_messages" does not exist
+STATEMENT:  ALTER TABLE public.tender_messages ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.tags" does not exist
+STATEMENT:  ALTER TABLE public.tags ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.taggings" does not exist
+STATEMENT:  ALTER TABLE public.taggings ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.snippets" does not exist
+STATEMENT:  ALTER TABLE public.snippets ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.sites" does not exist
+STATEMENT:  ALTER TABLE public.sites ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.sections" does not exist
+STATEMENT:  ALTER TABLE public.sections ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.section_translations" does not exist
+STATEMENT:  ALTER TABLE public.section_translations ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.roles" does not exist
+STATEMENT:  ALTER TABLE public.roles ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.ratings" does not exist
+STATEMENT:  ALTER TABLE public.ratings ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.rating_statistics" does not exist
+STATEMENT:  ALTER TABLE public.rating_statistics ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.product_tenders" does not exist
+STATEMENT:  ALTER TABLE public.product_tenders ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.plugin_configs" does not exist
+STATEMENT:  ALTER TABLE public.plugin_configs ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.payment_transactions" does not exist
+STATEMENT:  ALTER TABLE public.payment_transactions ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.payment_subscribers" does not exist
+STATEMENT:  ALTER TABLE public.payment_subscribers ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.memberships" does not exist
+STATEMENT:  ALTER TABLE public.memberships ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.listings" does not exist
+STATEMENT:  ALTER TABLE public.listings ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.listing_contents" does not exist
+STATEMENT:  ALTER TABLE public.listing_contents ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.listing_categories" does not exist
+STATEMENT:  ALTER TABLE public.listing_categories ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.listing_attachments" does not exist
+STATEMENT:  ALTER TABLE public.listing_attachments ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.feedbacks" does not exist
+STATEMENT:  ALTER TABLE public.feedbacks ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.counters" does not exist
+STATEMENT:  ALTER TABLE public.counters ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.controlled_tags" does not exist
+STATEMENT:  ALTER TABLE public.controlled_tags ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.contents" does not exist
+STATEMENT:  ALTER TABLE public.contents ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.content_translations" does not exist
+STATEMENT:  ALTER TABLE public.content_translations ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.content_links" does not exist
+STATEMENT:  ALTER TABLE public.content_links ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.comments" does not exist
+STATEMENT:  ALTER TABLE public.comments ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.claim_requests" does not exist
+STATEMENT:  ALTER TABLE public.claim_requests ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.category_translations" does not exist
+STATEMENT:  ALTER TABLE public.category_translations ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.categorizations" does not exist
+STATEMENT:  ALTER TABLE public.categorizations ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.categories" does not exist
+STATEMENT:  ALTER TABLE public.categories ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.calendar_events" does not exist
+STATEMENT:  ALTER TABLE public.calendar_events ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.cached_pages" does not exist
+STATEMENT:  ALTER TABLE public.cached_pages ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.cached_page_references" does not exist
+STATEMENT:  ALTER TABLE public.cached_page_references ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.boards" does not exist
+STATEMENT:  ALTER TABLE public.boards ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.assets" does not exist
+STATEMENT:  ALTER TABLE public.assets ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.asset_assignments" does not exist
+STATEMENT:  ALTER TABLE public.asset_assignments ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.activities" does not exist
+STATEMENT:  ALTER TABLE public.activities ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.accounts" does not exist
+STATEMENT:  ALTER TABLE public.accounts ALTER COLUMN id DROP DEFAULT;
+ERROR:  sequence "vouchers_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.vouchers_id_seq;
+ERROR:  table "vouchers" does not exist
+STATEMENT:  DROP TABLE public.vouchers;
+ERROR:  sequence "views_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.views_id_seq;
+ERROR:  table "views" does not exist
+STATEMENT:  DROP TABLE public.views;
+ERROR:  sequence "users_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.users_id_seq;
+ERROR:  table "users" does not exist
+STATEMENT:  DROP TABLE public.users;
+ERROR:  sequence "topics_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.topics_id_seq;
+ERROR:  table "topics" does not exist
+STATEMENT:  DROP TABLE public.topics;
+ERROR:  sequence "tender_messages_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.tender_messages_id_seq;
+ERROR:  table "tender_messages" does not exist
+STATEMENT:  DROP TABLE public.tender_messages;
+ERROR:  sequence "tags_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.tags_id_seq;
+ERROR:  table "tags" does not exist
+STATEMENT:  DROP TABLE public.tags;
+ERROR:  sequence "taggings_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.taggings_id_seq;
+ERROR:  table "taggings" does not exist
+STATEMENT:  DROP TABLE public.taggings;
+ERROR:  sequence "snippets_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.snippets_id_seq;
+ERROR:  table "snippets" does not exist
+STATEMENT:  DROP TABLE public.snippets;
+ERROR:  sequence "sites_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.sites_id_seq;
+ERROR:  table "sites" does not exist
+STATEMENT:  DROP TABLE public.sites;
+ERROR:  sequence "sections_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.sections_id_seq;
+ERROR:  table "sections" does not exist
+STATEMENT:  DROP TABLE public.sections;
+ERROR:  sequence "section_translations_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.section_translations_id_seq;
+ERROR:  table "section_translations" does not exist
+STATEMENT:  DROP TABLE public.section_translations;
+ERROR:  table "schema_migrations" does not exist
+STATEMENT:  DROP TABLE public.schema_migrations;
+ERROR:  sequence "roles_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.roles_id_seq;
+ERROR:  table "roles" does not exist
+STATEMENT:  DROP TABLE public.roles;
+ERROR:  sequence "ratings_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.ratings_id_seq;
+ERROR:  table "ratings" does not exist
+STATEMENT:  DROP TABLE public.ratings;
+ERROR:  sequence "rating_statistics_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.rating_statistics_id_seq;
+ERROR:  table "rating_statistics" does not exist
+STATEMENT:  DROP TABLE public.rating_statistics;
+ERROR:  sequence "product_tenders_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.product_tenders_id_seq;
+ERROR:  table "product_tenders" does not exist
+STATEMENT:  DROP TABLE public.product_tenders;
+ERROR:  sequence "plugin_configs_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.plugin_configs_id_seq;
+ERROR:  table "plugin_configs" does not exist
+STATEMENT:  DROP TABLE public.plugin_configs;
+ERROR:  sequence "payment_transactions_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.payment_transactions_id_seq;
+ERROR:  table "payment_transactions" does not exist
+STATEMENT:  DROP TABLE public.payment_transactions;
+ERROR:  sequence "payment_subscribers_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.payment_subscribers_id_seq;
+ERROR:  table "payment_subscribers" does not exist
+STATEMENT:  DROP TABLE public.payment_subscribers;
+ERROR:  sequence "memberships_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.memberships_id_seq;
+ERROR:  table "memberships" does not exist
+STATEMENT:  DROP TABLE public.memberships;
+ERROR:  sequence "listings_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.listings_id_seq;
+ERROR:  table "listings" does not exist
+STATEMENT:  DROP TABLE public.listings;
+ERROR:  sequence "listing_contents_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.listing_contents_id_seq;
+ERROR:  table "listing_contents" does not exist
+STATEMENT:  DROP TABLE public.listing_contents;
+ERROR:  sequence "listing_categories_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.listing_categories_id_seq;
+ERROR:  table "listing_categories" does not exist
+STATEMENT:  DROP TABLE public.listing_categories;
+ERROR:  sequence "listing_attachments_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.listing_attachments_id_seq;
+ERROR:  table "listing_attachments" does not exist
+STATEMENT:  DROP TABLE public.listing_attachments;
+ERROR:  sequence "feedbacks_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.feedbacks_id_seq;
+ERROR:  table "feedbacks" does not exist
+STATEMENT:  DROP TABLE public.feedbacks;
+ERROR:  sequence "counters_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.counters_id_seq;
+ERROR:  table "counters" does not exist
+STATEMENT:  DROP TABLE public.counters;
+ERROR:  sequence "controlled_tags_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.controlled_tags_id_seq;
+ERROR:  table "controlled_tags" does not exist
+STATEMENT:  DROP TABLE public.controlled_tags;
+ERROR:  sequence "contents_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.contents_id_seq;
+ERROR:  table "contents" does not exist
+STATEMENT:  DROP TABLE public.contents;
+ERROR:  sequence "content_translations_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.content_translations_id_seq;
+ERROR:  table "content_translations" does not exist
+STATEMENT:  DROP TABLE public.content_translations;
+ERROR:  sequence "content_links_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.content_links_id_seq;
+ERROR:  table "content_links" does not exist
+STATEMENT:  DROP TABLE public.content_links;
+ERROR:  sequence "comments_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.comments_id_seq;
+ERROR:  table "comments" does not exist
+STATEMENT:  DROP TABLE public.comments;
+ERROR:  sequence "claim_requests_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.claim_requests_id_seq;
+ERROR:  table "claim_requests" does not exist
+STATEMENT:  DROP TABLE public.claim_requests;
+ERROR:  sequence "category_translations_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.category_translations_id_seq;
+ERROR:  table "category_translations" does not exist
+STATEMENT:  DROP TABLE public.category_translations;
+ERROR:  sequence "category_assignments_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.category_assignments_id_seq;
+ERROR:  table "categorizations" does not exist
+STATEMENT:  DROP TABLE public.categorizations;
+ERROR:  sequence "categories_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.categories_id_seq;
+ERROR:  table "categories" does not exist
+STATEMENT:  DROP TABLE public.categories;
+ERROR:  sequence "calendar_events_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.calendar_events_id_seq;
+ERROR:  table "calendar_events" does not exist
+STATEMENT:  DROP TABLE public.calendar_events;
+ERROR:  sequence "cached_pages_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.cached_pages_id_seq;
+ERROR:  table "cached_pages" does not exist
+STATEMENT:  DROP TABLE public.cached_pages;
+ERROR:  sequence "cached_page_references_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.cached_page_references_id_seq;
+ERROR:  table "cached_page_references" does not exist
+STATEMENT:  DROP TABLE public.cached_page_references;
+ERROR:  sequence "boards_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.boards_id_seq;
+ERROR:  table "boards" does not exist
+STATEMENT:  DROP TABLE public.boards;
+ERROR:  sequence "assets_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.assets_id_seq;
+ERROR:  table "assets" does not exist
+STATEMENT:  DROP TABLE public.assets;
+ERROR:  sequence "asset_assignments_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.asset_assignments_id_seq;
+ERROR:  table "asset_assignments" does not exist
+STATEMENT:  DROP TABLE public.asset_assignments;
+ERROR:  sequence "activities_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.activities_id_seq;
+ERROR:  table "activities" does not exist
+STATEMENT:  DROP TABLE public.activities;
+ERROR:  sequence "accounts_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.accounts_id_seq;
+ERROR:  table "accounts" does not exist
+STATEMENT:  DROP TABLE public.accounts;
+ERROR:  text search configuration "public.default" does not exist
+STATEMENT:  DROP TEXT SEARCH CONFIGURATION public."default";
+ERROR:  function max() does not exist at character 8
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+STATEMENT:  select max(*) from product_tenders;
+ERROR:  relation "rss_feeds" does not exist at character 245
+STATEMENT:              SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+	              FROM pg_attribute a LEFT JOIN pg_attrdef d
+	                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+	             WHERE a.attrelid = '"rss_feeds"'::regclass
+	               AND a.attnum > 0 AND NOT a.attisdropped
+	             ORDER BY a.attnum
+	
+ERROR:  relation "rss_feeds" does not exist at character 245
+STATEMENT:              SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+	              FROM pg_attribute a LEFT JOIN pg_attrdef d
+	                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+	             WHERE a.attrelid = '"rss_feeds"'::regclass
+	               AND a.attnum > 0 AND NOT a.attisdropped
+	             ORDER BY a.attnum
+	
+ERROR:  index "unique_schema_migrations" does not exist
+STATEMENT:  
+	DROP INDEX public.unique_schema_migrations;
+ERROR:  index "taggable_context" does not exist
+STATEMENT:  DROP INDEX public.taggable_context;
+ERROR:  index "subscribed" does not exist
+STATEMENT:  DROP INDEX public.subscribed;
+ERROR:  index "provider_transaction" does not exist
+STATEMENT:  DROP INDEX public.provider_transaction;
+ERROR:  index "ordered_by_listing" does not exist
+STATEMENT:  DROP INDEX public.ordered_by_listing;
+ERROR:  index "index_users_on_username" does not exist
+STATEMENT:  DROP INDEX public.index_users_on_username;
+ERROR:  index "index_users_on_account_id" does not exist
+STATEMENT:  DROP INDEX public.index_users_on_account_id;
+ERROR:  index "index_taggings_on_taggable_id_and_taggable_type" does not exist
+STATEMENT:  DROP INDEX public.index_taggings_on_taggable_id_and_taggable_type;
+ERROR:  index "index_taggings_on_tag_id" does not exist
+STATEMENT:  DROP INDEX public.index_taggings_on_tag_id;
+ERROR:  index "index_section_translations_on_section_id" does not exist
+STATEMENT:  DROP INDEX public.index_section_translations_on_section_id;
+ERROR:  index "index_ratings_on_rater_id" does not exist
+STATEMENT:  DROP INDEX public.index_ratings_on_rater_id;
+ERROR:  index "index_ratings_on_rated_type_and_rated_id" does not exist
+STATEMENT:  DROP INDEX public.index_ratings_on_rated_type_and_rated_id;
+ERROR:  index "index_rating_statistics_on_rated_type_and_rated_id" does not exist
+STATEMENT:  DROP INDEX public.index_rating_statistics_on_rated_type_and_rated_id;
+ERROR:  index "index_payment_transactions_on_payment_subscriber_id" does not exist
+STATEMENT:  DROP INDEX public.index_payment_transactions_on_payment_subscriber_id;
+ERROR:  index "index_category_translations_on_category_id" does not exist
+STATEMENT:  DROP INDEX public.index_category_translations_on_category_id;
+ERROR:  index "index_calendar_events_on_permalink" does not exist
+STATEMENT:  DROP INDEX public.index_calendar_events_on_permalink;
+ERROR:  index "index_calendar_events_on_listing_id" does not exist
+STATEMENT:  DROP INDEX public.index_calendar_events_on_listing_id;
+ERROR:  relation "public.vouchers" does not exist
+STATEMENT:  ALTER TABLE ONLY public.vouchers DROP CONSTRAINT vouchers_pkey;
+ERROR:  relation "public.views" does not exist
+STATEMENT:  ALTER TABLE ONLY public.views DROP CONSTRAINT views_pkey;
+ERROR:  relation "public.users" does not exist
+STATEMENT:  ALTER TABLE ONLY public.users DROP CONSTRAINT users_pkey;
+ERROR:  relation "public.topics" does not exist
+STATEMENT:  ALTER TABLE ONLY public.topics DROP CONSTRAINT topics_pkey;
+ERROR:  relation "public.tender_messages" does not exist
+STATEMENT:  ALTER TABLE ONLY public.tender_messages DROP CONSTRAINT tender_messages_pkey;
+ERROR:  relation "public.tags" does not exist
+STATEMENT:  ALTER TABLE ONLY public.tags DROP CONSTRAINT tags_pkey;
+ERROR:  relation "public.taggings" does not exist
+STATEMENT:  ALTER TABLE ONLY public.taggings DROP CONSTRAINT taggings_pkey;
+ERROR:  relation "public.snippets" does not exist
+STATEMENT:  ALTER TABLE ONLY public.snippets DROP CONSTRAINT snippets_pkey;
+ERROR:  relation "public.sites" does not exist
+STATEMENT:  ALTER TABLE ONLY public.sites DROP CONSTRAINT sites_pkey;
+ERROR:  relation "public.sections" does not exist
+STATEMENT:  ALTER TABLE ONLY public.sections DROP CONSTRAINT sections_pkey;
+ERROR:  relation "public.section_translations" does not exist
+STATEMENT:  ALTER TABLE ONLY public.section_translations DROP CONSTRAINT section_translations_pkey;
+ERROR:  relation "public.roles" does not exist
+STATEMENT:  ALTER TABLE ONLY public.roles DROP CONSTRAINT roles_pkey;
+ERROR:  relation "public.ratings" does not exist
+STATEMENT:  ALTER TABLE ONLY public.ratings DROP CONSTRAINT ratings_pkey;
+ERROR:  relation "public.rating_statistics" does not exist
+STATEMENT:  ALTER TABLE ONLY public.rating_statistics DROP CONSTRAINT rating_statistics_pkey;
+ERROR:  relation "public.product_tenders" does not exist
+STATEMENT:  ALTER TABLE ONLY public.product_tenders DROP CONSTRAINT product_tenders_pkey;
+ERROR:  relation "public.plugin_configs" does not exist
+STATEMENT:  ALTER TABLE ONLY public.plugin_configs DROP CONSTRAINT plugin_configs_pkey;
+ERROR:  relation "public.payment_transactions" does not exist
+STATEMENT:  ALTER TABLE ONLY public.payment_transactions DROP CONSTRAINT payment_transactions_pkey;
+ERROR:  relation "public.payment_subscribers" does not exist
+STATEMENT:  ALTER TABLE ONLY public.payment_subscribers DROP CONSTRAINT payment_subscribers_pkey;
+ERROR:  relation "public.memberships" does not exist
+STATEMENT:  ALTER TABLE ONLY public.memberships DROP CONSTRAINT memberships_pkey;
+ERROR:  relation "public.listings" does not exist
+STATEMENT:  ALTER TABLE ONLY public.listings DROP CONSTRAINT listings_pkey;
+ERROR:  relation "public.listing_contents" does not exist
+STATEMENT:  ALTER TABLE ONLY public.listing_contents DROP CONSTRAINT listing_contents_pkey;
+ERROR:  relation "public.listing_categories" does not exist
+STATEMENT:  ALTER TABLE ONLY public.listing_categories DROP CONSTRAINT listing_categories_pkey;
+ERROR:  relation "public.listing_attachments" does not exist
+STATEMENT:  ALTER TABLE ONLY public.listing_attachments DROP CONSTRAINT listing_attachments_pkey;
+ERROR:  relation "public.feedbacks" does not exist
+STATEMENT:  ALTER TABLE ONLY public.feedbacks DROP CONSTRAINT feedbacks_pkey;
+ERROR:  relation "public.counters" does not exist
+STATEMENT:  ALTER TABLE ONLY public.counters DROP CONSTRAINT counters_pkey;
+ERROR:  relation "public.controlled_tags" does not exist
+STATEMENT:  ALTER TABLE ONLY public.controlled_tags DROP CONSTRAINT controlled_tags_pkey;
+ERROR:  relation "public.contents" does not exist
+STATEMENT:  ALTER TABLE ONLY public.contents DROP CONSTRAINT contents_pkey;
+ERROR:  relation "public.content_translations" does not exist
+STATEMENT:  ALTER TABLE ONLY public.content_translations DROP CONSTRAINT content_translations_pkey;
+ERROR:  relation "public.content_links" does not exist
+STATEMENT:  ALTER TABLE ONLY public.content_links DROP CONSTRAINT content_links_pkey;
+ERROR:  relation "public.comments" does not exist
+STATEMENT:  ALTER TABLE ONLY public.comments DROP CONSTRAINT comments_pkey;
+ERROR:  relation "public.claim_requests" does not exist
+STATEMENT:  ALTER TABLE ONLY public.claim_requests DROP CONSTRAINT claim_requests_pkey;
+ERROR:  relation "public.category_translations" does not exist
+STATEMENT:  ALTER TABLE ONLY public.category_translations DROP CONSTRAINT category_translations_pkey;
+ERROR:  relation "public.categorizations" does not exist
+STATEMENT:  ALTER TABLE ONLY public.categorizations DROP CONSTRAINT categorizations_pkey;
+ERROR:  relation "public.categories" does not exist
+STATEMENT:  ALTER TABLE ONLY public.categories DROP CONSTRAINT categories_pkey;
+ERROR:  relation "public.calendar_events" does not exist
+STATEMENT:  ALTER TABLE ONLY public.calendar_events DROP CONSTRAINT calendar_events_pkey;
+ERROR:  relation "public.cached_pages" does not exist
+STATEMENT:  ALTER TABLE ONLY public.cached_pages DROP CONSTRAINT cached_pages_pkey;
+ERROR:  relation "public.cached_page_references" does not exist
+STATEMENT:  ALTER TABLE ONLY public.cached_page_references DROP CONSTRAINT cached_page_references_pkey;
+ERROR:  relation "public.boards" does not exist
+STATEMENT:  ALTER TABLE ONLY public.boards DROP CONSTRAINT boards_pkey;
+ERROR:  relation "public.assets" does not exist
+STATEMENT:  ALTER TABLE ONLY public.assets DROP CONSTRAINT assets_pkey;
+ERROR:  relation "public.asset_assignments" does not exist
+STATEMENT:  ALTER TABLE ONLY public.asset_assignments DROP CONSTRAINT asset_assignments_pkey;
+ERROR:  relation "public.activities" does not exist
+STATEMENT:  ALTER TABLE ONLY public.activities DROP CONSTRAINT activities_pkey;
+ERROR:  relation "public.accounts" does not exist
+STATEMENT:  ALTER TABLE ONLY public.accounts DROP CONSTRAINT accounts_pkey;
+ERROR:  relation "public.vouchers" does not exist
+STATEMENT:  ALTER TABLE public.vouchers ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.views" does not exist
+STATEMENT:  ALTER TABLE public.views ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.users" does not exist
+STATEMENT:  ALTER TABLE public.users ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.topics" does not exist
+STATEMENT:  ALTER TABLE public.topics ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.tender_messages" does not exist
+STATEMENT:  ALTER TABLE public.tender_messages ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.tags" does not exist
+STATEMENT:  ALTER TABLE public.tags ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.taggings" does not exist
+STATEMENT:  ALTER TABLE public.taggings ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.snippets" does not exist
+STATEMENT:  ALTER TABLE public.snippets ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.sites" does not exist
+STATEMENT:  ALTER TABLE public.sites ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.sections" does not exist
+STATEMENT:  ALTER TABLE public.sections ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.section_translations" does not exist
+STATEMENT:  ALTER TABLE public.section_translations ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.roles" does not exist
+STATEMENT:  ALTER TABLE public.roles ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.ratings" does not exist
+STATEMENT:  ALTER TABLE public.ratings ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.rating_statistics" does not exist
+STATEMENT:  ALTER TABLE public.rating_statistics ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.product_tenders" does not exist
+STATEMENT:  ALTER TABLE public.product_tenders ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.plugin_configs" does not exist
+STATEMENT:  ALTER TABLE public.plugin_configs ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.payment_transactions" does not exist
+STATEMENT:  ALTER TABLE public.payment_transactions ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.payment_subscribers" does not exist
+STATEMENT:  ALTER TABLE public.payment_subscribers ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.memberships" does not exist
+STATEMENT:  ALTER TABLE public.memberships ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.listings" does not exist
+STATEMENT:  ALTER TABLE public.listings ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.listing_contents" does not exist
+STATEMENT:  ALTER TABLE public.listing_contents ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.listing_categories" does not exist
+STATEMENT:  ALTER TABLE public.listing_categories ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.listing_attachments" does not exist
+STATEMENT:  ALTER TABLE public.listing_attachments ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.feedbacks" does not exist
+STATEMENT:  ALTER TABLE public.feedbacks ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.counters" does not exist
+STATEMENT:  ALTER TABLE public.counters ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.controlled_tags" does not exist
+STATEMENT:  ALTER TABLE public.controlled_tags ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.contents" does not exist
+STATEMENT:  ALTER TABLE public.contents ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.content_translations" does not exist
+STATEMENT:  ALTER TABLE public.content_translations ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.content_links" does not exist
+STATEMENT:  ALTER TABLE public.content_links ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.comments" does not exist
+STATEMENT:  ALTER TABLE public.comments ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.claim_requests" does not exist
+STATEMENT:  ALTER TABLE public.claim_requests ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.category_translations" does not exist
+STATEMENT:  ALTER TABLE public.category_translations ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.categorizations" does not exist
+STATEMENT:  ALTER TABLE public.categorizations ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.categories" does not exist
+STATEMENT:  ALTER TABLE public.categories ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.calendar_events" does not exist
+STATEMENT:  ALTER TABLE public.calendar_events ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.cached_pages" does not exist
+STATEMENT:  ALTER TABLE public.cached_pages ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.cached_page_references" does not exist
+STATEMENT:  ALTER TABLE public.cached_page_references ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.boards" does not exist
+STATEMENT:  ALTER TABLE public.boards ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.assets" does not exist
+STATEMENT:  ALTER TABLE public.assets ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.asset_assignments" does not exist
+STATEMENT:  ALTER TABLE public.asset_assignments ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.activities" does not exist
+STATEMENT:  ALTER TABLE public.activities ALTER COLUMN id DROP DEFAULT;
+ERROR:  relation "public.accounts" does not exist
+STATEMENT:  ALTER TABLE public.accounts ALTER COLUMN id DROP DEFAULT;
+ERROR:  sequence "vouchers_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.vouchers_id_seq;
+ERROR:  table "vouchers" does not exist
+STATEMENT:  DROP TABLE public.vouchers;
+ERROR:  sequence "views_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.views_id_seq;
+ERROR:  table "views" does not exist
+STATEMENT:  DROP TABLE public.views;
+ERROR:  sequence "users_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.users_id_seq;
+ERROR:  table "users" does not exist
+STATEMENT:  DROP TABLE public.users;
+ERROR:  sequence "topics_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.topics_id_seq;
+ERROR:  table "topics" does not exist
+STATEMENT:  DROP TABLE public.topics;
+ERROR:  sequence "tender_messages_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.tender_messages_id_seq;
+ERROR:  table "tender_messages" does not exist
+STATEMENT:  DROP TABLE public.tender_messages;
+ERROR:  sequence "tags_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.tags_id_seq;
+ERROR:  table "tags" does not exist
+STATEMENT:  DROP TABLE public.tags;
+ERROR:  sequence "taggings_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.taggings_id_seq;
+ERROR:  table "taggings" does not exist
+STATEMENT:  DROP TABLE public.taggings;
+ERROR:  sequence "snippets_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.snippets_id_seq;
+ERROR:  table "snippets" does not exist
+STATEMENT:  DROP TABLE public.snippets;
+ERROR:  sequence "sites_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.sites_id_seq;
+ERROR:  table "sites" does not exist
+STATEMENT:  DROP TABLE public.sites;
+ERROR:  sequence "sections_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.sections_id_seq;
+ERROR:  table "sections" does not exist
+STATEMENT:  DROP TABLE public.sections;
+ERROR:  sequence "section_translations_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.section_translations_id_seq;
+ERROR:  table "section_translations" does not exist
+STATEMENT:  DROP TABLE public.section_translations;
+ERROR:  table "schema_migrations" does not exist
+STATEMENT:  DROP TABLE public.schema_migrations;
+ERROR:  table "roles_users" does not exist
+STATEMENT:  DROP TABLE public.roles_users;
+ERROR:  sequence "roles_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.roles_id_seq;
+ERROR:  table "roles" does not exist
+STATEMENT:  DROP TABLE public.roles;
+ERROR:  sequence "ratings_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.ratings_id_seq;
+ERROR:  table "ratings" does not exist
+STATEMENT:  DROP TABLE public.ratings;
+ERROR:  sequence "rating_statistics_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.rating_statistics_id_seq;
+ERROR:  table "rating_statistics" does not exist
+STATEMENT:  DROP TABLE public.rating_statistics;
+ERROR:  sequence "product_tenders_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.product_tenders_id_seq;
+ERROR:  table "product_tenders" does not exist
+STATEMENT:  DROP TABLE public.product_tenders;
+ERROR:  sequence "plugin_configs_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.plugin_configs_id_seq;
+ERROR:  table "plugin_configs" does not exist
+STATEMENT:  DROP TABLE public.plugin_configs;
+ERROR:  sequence "payment_transactions_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.payment_transactions_id_seq;
+ERROR:  table "payment_transactions" does not exist
+STATEMENT:  DROP TABLE public.payment_transactions;
+ERROR:  sequence "payment_subscribers_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.payment_subscribers_id_seq;
+ERROR:  table "payment_subscribers" does not exist
+STATEMENT:  DROP TABLE public.payment_subscribers;
+ERROR:  sequence "memberships_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.memberships_id_seq;
+ERROR:  table "memberships" does not exist
+STATEMENT:  DROP TABLE public.memberships;
+ERROR:  sequence "listings_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.listings_id_seq;
+ERROR:  table "listings" does not exist
+STATEMENT:  DROP TABLE public.listings;
+ERROR:  sequence "listing_contents_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.listing_contents_id_seq;
+ERROR:  table "listing_contents" does not exist
+STATEMENT:  DROP TABLE public.listing_contents;
+ERROR:  sequence "listing_categories_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.listing_categories_id_seq;
+ERROR:  table "listing_categories" does not exist
+STATEMENT:  DROP TABLE public.listing_categories;
+ERROR:  sequence "listing_attachments_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.listing_attachments_id_seq;
+ERROR:  table "listing_attachments" does not exist
+STATEMENT:  DROP TABLE public.listing_attachments;
+ERROR:  sequence "feedbacks_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.feedbacks_id_seq;
+ERROR:  table "feedbacks" does not exist
+STATEMENT:  DROP TABLE public.feedbacks;
+ERROR:  sequence "counters_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.counters_id_seq;
+ERROR:  table "counters" does not exist
+STATEMENT:  DROP TABLE public.counters;
+ERROR:  sequence "controlled_tags_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.controlled_tags_id_seq;
+ERROR:  table "controlled_tags" does not exist
+STATEMENT:  DROP TABLE public.controlled_tags;
+ERROR:  sequence "contents_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.contents_id_seq;
+ERROR:  table "contents" does not exist
+STATEMENT:  DROP TABLE public.contents;
+ERROR:  sequence "content_translations_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.content_translations_id_seq;
+ERROR:  table "content_translations" does not exist
+STATEMENT:  DROP TABLE public.content_translations;
+ERROR:  sequence "content_links_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.content_links_id_seq;
+ERROR:  table "content_links" does not exist
+STATEMENT:  DROP TABLE public.content_links;
+ERROR:  sequence "comments_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.comments_id_seq;
+ERROR:  table "comments" does not exist
+STATEMENT:  DROP TABLE public.comments;
+ERROR:  sequence "claim_requests_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.claim_requests_id_seq;
+ERROR:  table "claim_requests" does not exist
+STATEMENT:  DROP TABLE public.claim_requests;
+ERROR:  sequence "category_translations_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.category_translations_id_seq;
+ERROR:  table "category_translations" does not exist
+STATEMENT:  DROP TABLE public.category_translations;
+ERROR:  sequence "categorizations_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.categorizations_id_seq;
+ERROR:  table "categorizations" does not exist
+STATEMENT:  DROP TABLE public.categorizations;
+ERROR:  sequence "categories_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.categories_id_seq;
+ERROR:  table "categories" does not exist
+STATEMENT:  DROP TABLE public.categories;
+ERROR:  sequence "calendar_events_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.calendar_events_id_seq;
+ERROR:  table "calendar_events" does not exist
+STATEMENT:  DROP TABLE public.calendar_events;
+ERROR:  sequence "cached_pages_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.cached_pages_id_seq;
+ERROR:  table "cached_pages" does not exist
+STATEMENT:  DROP TABLE public.cached_pages;
+ERROR:  sequence "cached_page_references_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.cached_page_references_id_seq;
+ERROR:  table "cached_page_references" does not exist
+STATEMENT:  DROP TABLE public.cached_page_references;
+ERROR:  sequence "boards_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.boards_id_seq;
+ERROR:  table "boards" does not exist
+STATEMENT:  DROP TABLE public.boards;
+ERROR:  sequence "assets_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.assets_id_seq;
+ERROR:  table "assets" does not exist
+STATEMENT:  DROP TABLE public.assets;
+ERROR:  sequence "asset_assignments_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.asset_assignments_id_seq;
+ERROR:  table "asset_assignments" does not exist
+STATEMENT:  DROP TABLE public.asset_assignments;
+ERROR:  sequence "activities_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.activities_id_seq;
+ERROR:  table "activities" does not exist
+STATEMENT:  DROP TABLE public.activities;
+ERROR:  sequence "accounts_id_seq" does not exist
+STATEMENT:  DROP SEQUENCE public.accounts_id_seq;
+ERROR:  table "accounts" does not exist
+STATEMENT:  DROP TABLE public.accounts;
+ERROR:  syntax error at or near "[" at character 8
+STATEMENT:  SELECT [:name, :id] FROM "categories" 
+FATAL:  role "mrrussellong" does not exist
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down

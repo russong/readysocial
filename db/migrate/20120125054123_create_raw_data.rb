@@ -8,5 +8,6 @@ class CreateRawData < ActiveRecord::Migration
       t.timestamps
     end
     add_index :raw_data, :keyword_id
+    execute("alter table raw_data add foreign key (keyword_id) references keywords(id);")
   end
 end
