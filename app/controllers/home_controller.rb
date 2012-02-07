@@ -1,5 +1,8 @@
-require "net/http"
 class HomeController < ApplicationController
+  def populate_data
+    RssFeedDatum.populate_trigram_index
+  end
+  
   def index
     @keywords = Keyword.all
     @hash = {}
@@ -23,7 +26,6 @@ class HomeController < ApplicationController
       end
     end
   end
-
 end
 
 # "(\w+[and]?)" search for ""

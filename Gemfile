@@ -20,7 +20,8 @@ gem 'activeadmin', git: "git://github.com/gregbell/active_admin.git"
 gem "feedzirra", git: "git://github.com/pauldix/feedzirra.git" #, :lib => "feedzirra", :source => "http://gems.github.com"
 gem 'haml'
 gem 'haml-rails'
-gem 'meta_search',    '>= 1.1.0.pre'
+# gem 'meta_search',    '>= 1.1.0.pre'
 gem 'twitter-bootstrap-rails'
+
 
 gem 'jquery-rails'

@@ -1,0 +1,16 @@
+CHANGELOG
+MIT-LICENSE
+README.markdown
+Rakefile
+lib/generators/no_fuzz/USAGE
+lib/generators/no_fuzz/no_fuzz_generator.rb
+lib/generators/no_fuzz/templates/migration.rb
+lib/generators/no_fuzz/templates/model.rb
+lib/no_fuzz.rb
+no_fuzz.gemspec
+tasks/no_fuzz_tasks.rake
+test/database.yml
+test/no_fuzz_test.rb
+test/schema.rb
+test/test_helper.rb
+Manifest

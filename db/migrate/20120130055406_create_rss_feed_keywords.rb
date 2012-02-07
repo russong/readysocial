@@ -2,6 +2,7 @@ class CreateRssFeedKeywords < ActiveRecord::Migration
   def change
     create_table :rss_feed_keywords do |t|
       t.references :rss_feed
+      t.string     :name
       t.timestamps
     end
     add_index :rss_feed_keywords, :rss_feed_id
