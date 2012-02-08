@@ -18,7 +18,7 @@ class HomeController < ApplicationController
       if(res.class == Net::HTTPOK)
         json = JSON.parse(res.body)
         json["results"].each do |result|
-          val << result["text"]
+          val << "#{result["from_user"]}:: #{result["text"]}"
           # val = val.join if val.class == Array
           RawDatum.where(blurb: result["text"]).first_or_create(keyword_id: key.id)
         end
