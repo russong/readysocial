@@ -5,9 +5,9 @@ ActiveAdmin.register RssFeedDatum do
     column :keyword, :sortable => "rss_feed_keywords.name"  do |k|
       k.rss_feed_keyword.name
     end
-    # column "RSS Feed" do |k|
-    #   k.rss_feed.url
-    # end
+    column "RSS Feed" do |k|
+      k.rss_feed_keyword.rss_feed.url
+    end
     column :heading do |k|
       k.name
     end
