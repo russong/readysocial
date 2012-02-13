@@ -4,6 +4,17 @@ class HomeController < ApplicationController
   end
   
   def index
+    if request.post?
+      # @search_rec = Search.create(:keywords => params[:text])
+      @search_listing = Sunspot.search(RssFeedDatum) do |q|
+        q.keywords  params[:text]
+      end
+      @listings = @search_listing.results
+
+      logger.debug "========================"
+      logger.debug "#{@listings.inspect}"
+      logger.debug "========================"
+    end
     @keywords = Keyword.all
     @hash = {}
     page = (!params[:page].blank?)? params[:page] : 1
@@ -20,7 +31,7 @@ class HomeController < ApplicationController
         json["results"].each do |result|
           val << "#{result["from_user"]}:: #{result["text"]}"
           # val = val.join if val.class == Array
-          RawDatum.where(blurb: result["text"]).first_or_create(keyword_id: key.id)
+          RawDatum.where(blurb: result["text"], username: result["from_user"]).first_or_create(keyword_id: key.id)
         end
         @hash = @hash.merge!(key.name.to_sym => val)
       end

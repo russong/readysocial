@@ -4,6 +4,7 @@ ActiveAdmin.register RawDatum do
     column :keyword, :sortable => "keywords.name"  do |k|
       k.keyword.name
     end
+    column :username
     column :blurb
     default_actions
   end

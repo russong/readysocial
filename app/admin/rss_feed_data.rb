@@ -1,5 +1,4 @@
 ActiveAdmin.register RssFeedDatum do
-#  Id   |   Keyword   |   RSS Feed   |   Heading   |   URL   |   Date Published   |   Date Created   |   Date Updated.
   index do
     column :id
     column :keyword, :sortable => "rss_feed_keywords.name"  do |k|
