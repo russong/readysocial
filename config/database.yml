@@ -13,11 +13,10 @@
 # gem 'pg'
 #
 development:
-  adapter: postgresql
+  adapter: mysql
   encoding: unicode
-  database: infoready002
-  pool: 5
-  username: bchan
+  database: readysocial
+  username: root
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -44,3 +43,4 @@ production:
   database: readysocial
   username: root
   password:
+    
