@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.1'
-gem 'pg'
+gem 'mysql'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
