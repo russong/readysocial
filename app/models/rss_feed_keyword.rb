@@ -20,8 +20,6 @@ class RssFeedKeyword < ActiveRecord::Base
   # end
   
 
-
-  private
   def add_entries(entries, entry_id)
     entries.each do |entry|
       data = ::RssFeedDatum.where(url: entry.url).first_or_create(rss_feed_keyword_id: entry_id, guid: entry.id, name: entry.title, published_at: entry.published, blurb: get_html_content("#{entry.url}"))

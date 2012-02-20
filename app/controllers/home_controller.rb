@@ -1,7 +1,4 @@
 class HomeController < ApplicationController
-  def populate_data
-    RssFeedDatum.populate_trigram_index
-  end
   
   def index
     if request.post?
@@ -10,10 +7,6 @@ class HomeController < ApplicationController
         q.keywords  params[:text]
       end
       @listings = @search_listing.results
-
-      logger.debug "========================"
-      logger.debug "#{@listings.inspect}"
-      logger.debug "========================"
     end
     @keywords = Keyword.all
     @hash = {}
