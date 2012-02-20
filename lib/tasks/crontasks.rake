@@ -1,7 +1,7 @@
 namespace :cron do
   desc "pull data"
   task :pull_data => :environment do
-    puts "RSS Start Count: #{RSSFeedDatum.count}"
+    puts "RSS Start Count: #{RssFeedDatum.count}"
     puts "Twitter Start Count: #{RawDatum.count}"
     
     RssFeedKeyword.find_each do |keyword|
@@ -16,7 +16,7 @@ namespace :cron do
       end
     end
     
-    puts "RSS End Count: #{RSSFeedDatum.count}"
+    puts "RSS End Count: #{RssFeedDatum.count}"
     puts "Twitter End Count: #{RawDatum.count}"
   end
 end
